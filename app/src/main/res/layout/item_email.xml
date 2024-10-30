@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <!-- Avatar của người gửi -->
+    <TextView
+        android:id="@+id/avatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:backgroundTint="#FFBB86FC"
+        android:gravity="center"
+        android:layout_marginEnd="8dp"
+        android:text="E"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:background="@drawable/circle_background" />
+
+    <!-- Tên người gửi -->
+    <TextView
+        android:id="@+id/senderName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/avatar"
+        android:text="Edurila.com"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Thời gian gửi -->
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="12:34 PM"
+        android:textColor="#888888"
+        android:textSize="12sp" />
+
+    <!-- Tiêu đề email -->
+    <TextView
+        android:id="@+id/emailTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/senderName"
+        android:layout_toEndOf="@id/avatar"
+        android:text="Subject Line Here"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <!-- Nội dung tóm tắt -->
+    <TextView
+        android:id="@+id/emailSnippet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailTitle"
+        android:layout_toEndOf="@id/avatar"
+        android:text="This is a snippet of the email content..."
+        android:textColor="#888888"
+        android:textSize="14sp" />
+
+    <!-- Biểu tượng đánh dấu sao -->
+    <ImageView
+        android:id="@+id/starIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/time"
+        android:src="@drawable/ic_star_border"
+        android:contentDescription="Star Icon" />
+
+</RelativeLayout>
